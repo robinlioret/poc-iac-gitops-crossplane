@@ -4,7 +4,7 @@ resources:
     metadata:
       name: provider-aws-s3
     spec:
-      package: xpkg.upbound.io/upbound/provider-aws-s3:v1.17.0
+      package: xpkg.upbound.io/upbound/provider-family-aws:v1.17.0
 
   - apiVersion: aws.crossplane.io/v1beta1
     kind: ProviderConfig
