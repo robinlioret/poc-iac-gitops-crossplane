@@ -1,0 +1,4 @@
+{{ range $_, $composition := .Values.compositions }}
+---
+{{ toYaml $composition }}
+{{ end }}
