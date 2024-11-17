@@ -9,23 +9,11 @@ resources:
   - apiVersion: aws.crossplane.io/v1beta1
     kind: ProviderConfig
     metadata:
-      name: aws-access-key
+      name: aws-account-1
     spec:
       credentials:
         source: Secret
         secretRef:
           namespace: crossplane-system
           name: aws-iac-secret
-          key: aws-access-key
-
-  - apiVersion: aws.crossplane.io/v1beta1
-    kind: ProviderConfig
-    metadata:
-      name: aws-secret-access-key
-    spec:
-      credentials:
-        source: Secret
-        secretRef:
-          namespace: crossplane-system
-          name: aws-iac-secret
-          key: aws-secret-access-key
+          key: credentials
