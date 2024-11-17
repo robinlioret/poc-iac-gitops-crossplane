@@ -22,6 +22,10 @@ kubectl wait --namespace ingress-nginx \
   --timeout=90s
 echo "Nginx ingress controller deployed."
 
+# Create crossplane secret and resource
+kubectl create namespace crossplane-system
+kubectl create secret generic -n crossplane-system aws-iac-secret --from-file=credentials=./sensitive/aws-credentials
+
 # Install ArgoCD
 echo "Deploying ArgoCD..."
 kubectl create namespace argocd
