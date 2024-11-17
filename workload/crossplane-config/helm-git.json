@@ -1,0 +1,7 @@
+{
+  "dNamespace": "crossplane-system",
+  "dRepoURL": "https://github.com/robinlioret/poc-iac-gitops-crossplane.git",
+  "dTargetRevision": "main",
+  "dChartPath": "charts/as-is",
+  "dReplace": "false"
+}
