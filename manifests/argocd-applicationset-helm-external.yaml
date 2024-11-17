@@ -29,7 +29,7 @@ spec:
             valueFiles:
               - $values/{{ .path.path }}/values.yaml
         - repoURL: https://github.com/robinlioret/poc-iac-gitops-crossplane.git
-          targetRevision: master
+          targetRevision: main
           ref: values
       syncPolicy:
         automated:
