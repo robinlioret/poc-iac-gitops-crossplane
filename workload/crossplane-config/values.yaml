@@ -5,3 +5,27 @@ resources:
       name: provider-aws
     spec:
       package: xpkg.upbound.io/crossplane-contrib/provider-aws:v0.39.0
+
+  - apiVersion: aws.crossplane.io/v1beta1
+    kind: ProviderConfig
+    metadata:
+      name: aws-access-key
+    spec:
+      credentials:
+        source: Secret
+        secretRef:
+          namespace: crossplane-system
+          name: aws-iac-secret
+          key: aws-access-key
+
+  - apiVersion: aws.crossplane.io/v1beta1
+    kind: ProviderConfig
+    metadata:
+      name: aws-secret-access-key
+    spec:
+      credentials:
+        source: Secret
+        secretRef:
+          namespace: crossplane-system
+          name: aws-iac-secret
+          key: aws-secret-access-key
