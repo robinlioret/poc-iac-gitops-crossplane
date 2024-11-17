@@ -1,1 +1,13 @@
 resources:
+  - apiVersion: s3.aws.upbound.io/v1beta1
+    kind: Bucket
+    metadata:
+      name: user-bucket
+    spec:
+      forProvider:
+        region: eu-west-3
+        tags:
+          Name: sample-bucket
+          managed-by: crossplane
+      providerConfigRef:
+        name: aws-account-1
