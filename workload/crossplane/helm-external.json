@@ -1,0 +1,7 @@
+{
+  "dNamespace": "crossplane-system",
+  "dRepoURL": "https://charts.crossplane.io/stable",
+  "dTargetRevision": "1.19.0-rc.0.77.g184951c4b",
+  "dChartName": "crossplane",
+  "dReplace": "false"
+}
