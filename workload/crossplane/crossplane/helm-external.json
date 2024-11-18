@@ -3,5 +3,6 @@
   "dRepoURL": "https://charts.crossplane.io/stable",
   "dTargetRevision": "1.18.0",
   "dChartName": "crossplane",
-  "dReplace": "false"
+  "dReplace": "false",
+  "dSyncWave": "0"
 }

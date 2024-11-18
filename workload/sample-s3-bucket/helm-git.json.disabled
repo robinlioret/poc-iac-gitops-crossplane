@@ -3,5 +3,6 @@
   "dRepoURL": "https://github.com/robinlioret/poc-iac-gitops-crossplane.git",
   "dTargetRevision": "main",
   "dChartPath": "charts/as-is",
-  "dReplace": "false"
+  "dReplace": "false",
+  "dSyncWave": "10"
 }
