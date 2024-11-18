@@ -38,14 +38,14 @@ kubectl wait --namespace argocd \
   --timeout=90s
 echo "ArgoCD is up"
 echo "Updating host file"
-grep -v "argocd.local" /etc/hosts | sudo tee /etc/hosts > /dev/null
-echo -e "127.0.0.1\targocd.local" | sudo tee -a /etc/hosts > /dev/null
+grep -v "argocd.rli-gitops-crossplane.local" /etc/hosts | sudo tee /etc/hosts > /dev/null
+echo -e "127.0.0.1\targocd.rli-gitops-crossplane.local" | sudo tee -a /etc/hosts > /dev/null
 echo "Deploying the ArgoCD ingress"
 kubectl apply -f ./manifests/argocd-ingress.yaml
 sleep 5
 echo "Check argocd response"
-if curl -k https://argocd.local > /dev/null; then
-  echo "ArgoCD is accessible from https://argocd.local"
+if curl -k https://argocd.rli-gitops-crossplane.local > /dev/null; then
+  echo "ArgoCD is accessible from https://argocd.rli-gitops-crossplane.local"
 else
   echo "Something went wrong with argoCD deployment"
   exit 1
