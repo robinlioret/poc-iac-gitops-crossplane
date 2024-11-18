@@ -6,8 +6,5 @@ resources:
     spec:
       forProvider:
         region: eu-west-3
-        tags:
-          Name: sample-bucket
-          managed-by: crossplane
       providerConfigRef:
         name: aws-account-1
