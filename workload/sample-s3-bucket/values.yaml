@@ -2,7 +2,7 @@ resources:
   - apiVersion: s3.aws.upbound.io/v1beta1
     kind: Bucket
     metadata:
-      name: user-bucket
+      name: rli-bucket-gitops-test-fjodisgjosidcjiofezjofjsdsf
     spec:
       forProvider:
         region: eu-west-3
