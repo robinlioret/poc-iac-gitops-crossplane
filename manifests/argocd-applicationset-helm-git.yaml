@@ -44,4 +44,5 @@ spec:
           - CreateNamespace=true
           - PrunePropagationPolicy=foreground
           - FailOnSharedResource=true
+          - Prune=true
           - "Replace={{ .dReplace }}" # For Pulumi operator: metadata.annotation.last-applied-configuration is too long and does not support apply (force create / replace)

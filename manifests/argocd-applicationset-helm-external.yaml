@@ -44,4 +44,5 @@ spec:
           - CreateNamespace=true
           - PrunePropagationPolicy=foreground
           - FailOnSharedResource=true
+          - Prune=true
           - "Replace={{ .dReplace }}"
