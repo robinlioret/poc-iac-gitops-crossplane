@@ -1,10 +1,10 @@
-resources: [ ]
-#  - apiVersion: s3.aws.upbound.io/v1beta1
-#    kind: Bucket
-#    metadata:
-#      name: rli-bucket-gitops-test-fjodisgjosidcjiofezjofjsdsf
-#    spec:
-#      forProvider:
-#        region: eu-west-3
-#      providerConfigRef:
-#        name: aws-account-1
+resources:
+  - apiVersion: s3.aws.upbound.io/v1beta1
+    kind: Bucket
+    metadata:
+      name: rli-bucket-gitops-test-fjodisgjosidcjiofezjofjsdsf
+    spec:
+      forProvider:
+        region: eu-west-3
+      providerConfigRef:
+        name: aws-account-1
